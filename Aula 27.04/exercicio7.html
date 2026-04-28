@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    <form action="">
+        DIGITE O TURNO: <br/>(M-Matutino, V-Vespertino, N-Noturno)<br/>
+        <input type="text" id="turno" maxlength="1">
+        <br/>
+        <input type="button" onclick="saudacao()" value="Verifique"/>
+        Resultado: <br/>
+        <input type="text" id="resultado" readonly />
+    </form>
+    <script>
+     function saudacao(){
+        let l = document.getElementById('turno').value;
+        if (l == 'M' || l =='m'){
+            document.getElementById('resultado').value = 'Bom Dia!';
+        }else if(l == 'V' || l == 'v'){
+            document.getElementById('resultado').value = 'Boa Tarde !';
+        }else if(l == 'N' || l == 'n'){
+            document.getElementById('resultado').value = 'Boa Noite';
+        }else{
+            document.getElementById('resultado').value = 'Valor Inválido';
+        }
+        }
+    </script>
+    
+</body>
+</html>

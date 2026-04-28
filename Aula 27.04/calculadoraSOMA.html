@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>CALCULADORA</h1>
+    <hr> <!--Linha Horizontal-->
+    <form action="">
+        Número 1:<br/>
+        <input type="text" id="n1"><br/>
+        Número 2:<br/>
+        <input type="text" id="n2"><br/><br/>
+        <button type="button" onclick="relogio()">Calcular</button>
+        <button type="reset" onclick="relogio()">Limpar</button><br/>
+        <br/>
+
+        Resultado: <br/>
+        <input type="text" id="Resposta" readonly="readonly">
+
+    </form>
+    <script>
+        function relogio(){
+            // ENTRADA DE DADOS -> RECEBENDO DO HTML
+            let x = parseInt(document.getElementById("n1").value);
+            // alert ("O valor que peguei de X é: " + x);
+            // confirm ("O valor que peguei de X é: " + x);
+            let y = parseInt(document.getElementById("n2").value);
+
+            // PROCESSAMENTO
+            let soma = x + y;
+            // SAÍDA NA TELA
+            document.getElementById("Resposta").value = soma;
+        
+
+
+            
+        }
+    </script>
+
+</body>
+</html>
