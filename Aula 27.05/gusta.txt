@@ -1,0 +1,2 @@
+[27-05-26 21:29:32] ERRO: Sistema iniciado
+[27-05-26 21:30:07] INFO: Sistema iniciado

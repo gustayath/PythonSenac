@@ -1,0 +1,20 @@
+[27-05-26 21:19:37] INFO: Sistema Iniciado.
+[27-05-26 21:19:42] INFO: Sistema Iniciado.
+[27-05-26 21:21:56] INFO: Sistema Iniciado.
+[27-05-26 21:21:56] ERRO: Erro no sistema.
+[27-05-26 21:21:56] DEBUG: Debugando
+[27-05-26 21:21:56] INFO: Sistema Iniciado.
+[27-05-26 21:21:56] ERRO: Erro no sistema.
+[27-05-26 21:21:56] DEBUG: Debugando
+[27-05-26 21:21:57] INFO: Sistema Iniciado.
+[27-05-26 21:21:57] ERRO: Erro no sistema.
+[27-05-26 21:21:57] DEBUG: Debugando
+[27-05-26 21:21:57] INFO: Sistema Iniciado.
+[27-05-26 21:21:57] ERRO: Erro no sistema.
+[27-05-26 21:21:57] DEBUG: Debugando
+[27-05-26 21:29:32] INFO: Sistema Iniciado.
+[27-05-26 21:29:32] ERRO: Erro no sistema.
+[27-05-26 21:29:32] DEBUG: Debugando
+[27-05-26 21:30:07] INFO: Sistema Iniciado.
+[27-05-26 21:30:07] ERRO: Erro no sistema.
+[27-05-26 21:30:07] DEBUG: Debugando
