@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <button onclick="enviarPerguntas()">Enviar</button>
+    <script>
+        async function enviarPerguntas(){
+            const url = 'http://10.139.206.132:3000/perguntas';
+
+            const dados =
+            {
+                "pergunta": "Gustavo",
+                "resposta": "250"
+            };
+
+            try {
+                const resposta = await fetch(url, {method: 'POST', headers: {'Content-Type': 'application/json'}, 
+                body: JSON.stringify(dados)
+                });
+
+                if (!resposta.ok) {
+                    throw new Error(`Erro na requisição: ${resposta.status}`);
+                }
+
+                const resultado = await resposta.json();
+                console.log('Dados enviados com sucesso:', resultado);
+                return resultado;
+            
+            } catch (erro) {
+                console.error('Falha ao enviar os dados:', erro);
+            }
+        }
+
+        enviarPerguntas();
+    
+    </script>
+</body>
+</html>

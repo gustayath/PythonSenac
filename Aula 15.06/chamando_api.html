@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamada de API</title>
+    <style>
+        label {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        button {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: yellow;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="pegatexto" id="demo"></p>
+    <label>Insira seu CEP</label>
+    <input type="number" id="cep">
+    <br>
+
+    <button type="text" onclick="load()"><b>BUSCAR</b></button>
+    <button onclick="pegatexto()">BUSCA TEXTO</button>
+
+    <a href="https://loja.flamengo.com.br/" target="_blank" id="meulinkexterno">Algum Site</a>
+    <button onclick="getlinkexterno()">Link</button>
+  
+
+    <script>
+        function load() {
+            let cep = document.getElementById("cep").value;
+
+            var requisicao = new XMLHttpRequest();
+            requisicao.open("GET", "https://viacep.com.br/ws/" + cep + "/json/");
+
+            requisicao.send();
+
+            requisicao.onload = function () {
+                if (requisicao.status == 200) {
+                    resposta = requisicao.response;
+                    responseObj = JSON.parse(resposta);
+                    document.querySelector("#demo").innerHTML = responseObj.logradouro;
+                }
+            };
+        }
+        
+        function pegatexto() {
+            const titulo = document.querySelector(".pegatexto").innerText;
+            digitado(titulo);
+        }
+        
+        function digitado(p) {
+            alert(p)
+        }
+        
+        function getlinkexterno (){
+            const linkexterno = document.getElementById("meulinkexterno").getAttribute("href");
+            digitado(linkexterno)
+        }
+    </script>
+</body>
+
+</html>
