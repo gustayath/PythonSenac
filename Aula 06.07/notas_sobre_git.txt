@@ -1,0 +1,3 @@
+ALGUMAS NOTAS SOBRE FUNCIONAMENTO DO GIT\GIT HUB
+
+1 - Branchs são mais de uma versão do software, sendo comum utilizar versões para desenvolvimento antes de colocar na versão Main\Master. (Versões comuns. Desenvolvimento, Homologação, Main)
